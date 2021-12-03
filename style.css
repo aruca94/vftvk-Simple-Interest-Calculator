@@ -13,12 +13,12 @@ h1{
     width: 300px;
     padding: 20px;
     border-radius: 25px;
-    text-align: center;
+    text-align: left;
     margin: auto;
+}
+#title{
+    text-align: center;
 }
 .hilight, #interest{
     background-color: yellow;
-}
-footer{
-    text-align: center;
 }
