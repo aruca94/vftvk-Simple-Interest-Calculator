@@ -11,7 +11,7 @@ function compute(){
 // dynamically update rate
 function updateRate(){
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval + "%";
 };
 function computeInterest(){
     // variables to be used
