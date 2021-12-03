@@ -4,16 +4,17 @@
         <title>
             Simple Interest Calculator
         </title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
             Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range" id="rate" min="1" max="20" step="0.25" value="10.25">
+            Rate <input type="range" onchange="updateRate()" id="rate" min="1" max="20" step="0.25" value="10.25">
             <span id="rate_val">10.25%</span>  <br/>
+            <!-- no. of years dropdown menu begin -->
             No. of Years <select type="number"  select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -26,12 +27,14 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
                 </select> <br/><br>
-            Interest : <span id="result"></span><br>
+                <!-- no. of years dropdownw menu end -->
+            Interest : <span id="interest"></span><br>
 
             <button onclick="compute()">Compute Interest</button>
+            <br>
             <span id="result"></span>
         </div>
-        <!-- make sure footer appears as it should -->
+        <!-- footer -->
         <footer>
             <p>&#169; This Calculator belongs to Josh Owens</p>
         </footer>
