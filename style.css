@@ -14,8 +14,11 @@ h1{
     padding: 20px;
     border-radius: 25px;
     text-align: center;
+    margin: auto;
 }
 .hilight, #interest{
     background-color: yellow;
 }
-
+footer{
+    text-align: center;
+}
