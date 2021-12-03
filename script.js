@@ -22,7 +22,6 @@ function computeInterest(){
     var year = new Date().getFullYear() + parseInt(years);
     var interest = principal * years * rate / 100;
     // dynamically created text below
-    document.getElementById("interest").innerHTML = interest;
     document.getElementById("result").innerHTML = `If you deposit <span class="hilight">${principal}</span>,<br>
         at an interest rate of <span class="hilight">${rate}</span>%. <br> You will recieve an amount of <span class="hilight">${interest}</span>
     ,<br> in the year <span class="hilight">${year}</span><br>`
